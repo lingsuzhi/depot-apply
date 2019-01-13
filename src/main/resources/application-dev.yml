@@ -1,0 +1,22 @@
+server:
+  port: 8666
+spring:
+  datasource:
+    url: jdbc:mysql://cdb-6jylg03n.gz.tencentcdb.com:10058/depot?useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: txmysql
+    password: ENC(ToRYAfO3uiXtidQRxVuwyBqO2X8TZtAF)
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibenate:
+        format_sql: true
+    show-sql: true
+#mybatis:
+#  typeAliasesPackage: com.lsz.depot.apply.po
+#  mapperLocations: classpath:mapper/*.xml
+
+jasypt.encryptor.password: nmyswlsadrew
