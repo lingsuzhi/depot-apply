@@ -1,16 +1,12 @@
 package com.lsz.depot.apply.service;
 
 
-import com.lsz.depot.apply.base.dao.MemberInfoDao;
-import com.lsz.depot.apply.dao.AdminDao;
-import com.lsz.depot.apply.po.AdminInfo;
-import com.lsz.core.dto.AdminDTO;
 import com.lsz.core.dto.AdminHomeDTO;
 import com.lsz.core.dto.LoginDTO;
 import com.lsz.core.dto.MiniAdminDTO;
 import com.lsz.core.utils.Base64Util;
-import com.lsz.core.utils.BeanUtil;
 import com.lsz.core.utils.TokenUtil;
+import com.lsz.depot.apply.base.dao.MemberInfoDao;
 import com.lsz.depot.apply.po.MemberInfo;
 import com.lsz.depot.framework.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
@@ -28,13 +24,13 @@ public class AdminService {
     @Autowired
     private MemberInfoDao memberInfoDao;
 
-     public AdminHomeDTO getCurrentUser() {
+    public AdminHomeDTO getCurrentUser() {
         String currentUserId = TokenUtil.getCurrentUserId();
         if (StringUtils.isEmpty(currentUserId)) {
-            return null;
+            throw BusinessException.authException();
         }
-         MemberInfo memberInfo = memberInfoDao.findByAccount(currentUserId);
-        if (memberInfo == null){
+        MemberInfo memberInfo = memberInfoDao.findByAccount(currentUserId);
+        if (memberInfo == null) {
             return null;
         }
         AdminHomeDTO adminHomeDTO = new AdminHomeDTO();
@@ -65,6 +61,5 @@ public class AdminService {
         //暂时不做登录日志
         return miniAdminDTO;
     }
-
 
 }
