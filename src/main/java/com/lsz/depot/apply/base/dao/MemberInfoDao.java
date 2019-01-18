@@ -19,10 +19,10 @@ public interface MemberInfoDao extends JpaRepository<MemberInfo, Long> {
     //名称 <required>
     MemberInfo findByName(String name);
     
-    //角色  select[管理员,来宾] default['来宾']
+    //角色  select[管理员,操作员,来宾] default[来宾]
     MemberInfo findByRole(String role);
     
-    //性别  radio[男,女] default['男']
+    //性别  radio[男,女] default[男]
     MemberInfo findBySex(String sex);
     
     //手机 

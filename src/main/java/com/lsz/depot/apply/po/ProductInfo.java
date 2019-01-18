@@ -9,41 +9,46 @@ import java.math.BigDecimal;
 
 
 /**
- * 商品表
+ * 商品资料
  */
 @Data
 @NoArgsConstructor
 @Entity
 public class ProductInfo extends BasePO {
 
-    // key 编号
+    //编号 <key><param><required>
     private String number;
-    // --名称
+    //名称 <param><required>
     private String name;
-    // --规格
+    //规格 <param>
     private String spec;
-    // 条形码
-    private String barcode;
-    // 生产厂家
-    private String manufacturer;
-    // 含量
+    //含量
     private String content;
-    // 描述
-    private String description;
-    // 图片
-    private String image;
-    // 成本价
-    private BigDecimal cost;
-    // 价格
-    private BigDecimal proce;
-    // --类别
-    private String typeId;
-    // 单位
+    //单位  select[箱,个,只] default[箱]
     private String company;
-    // 等级
-    private Integer level;
-    // 初始库存
-    private BigDecimal stock;
-    // 状态
+    //类别id   <隐藏>
+    private String typeId;
+    //类别 <param>
+    private String type;
+    //条形码
+    private String barcode;
+    //生产厂家
+    private String manufacturer;
+    //图片
+    private String image;
+    //成本价
+    private BigDecimal cost;
+    //售价
+    private BigDecimal proce;
+    //状态
     private Boolean status;
+    //排序
+    private Double sort;
+    //备注 <textarea>
+    private String remark;
+    //颜色 <rowcolor>
+    private String color;
+    //标记
+    private String badge ;
+
 }

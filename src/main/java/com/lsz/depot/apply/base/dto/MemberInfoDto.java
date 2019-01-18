@@ -13,29 +13,29 @@ public class MemberInfoDto {
     //uuid
     private String uuid;
     
-    //账号 <key><required>
+    //账号
     private String account;
     
-    //名称 <required>
+    //名称
     private String name;
     
-    //角色  select[管理员,来宾] default['来宾']
+    //角色
     private String role;
     
-    //性别  radio[男,女] default['男']
+    //性别
     private String sex;
     
-    //手机 
+    //手机
     private String phone;
     
-    //注册时间 <隐藏编辑><时间>
+    //注册时间
     @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime registerDate;
     
-    //谷歌验证 <隐藏编辑>
+    //谷歌验证
     private String googleKey;
     
-    //备注 <textarea>
+    //备注
     private String remark;
 
 }

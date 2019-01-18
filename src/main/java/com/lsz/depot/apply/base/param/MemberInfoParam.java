@@ -18,10 +18,10 @@ public class MemberInfoParam{
     //名称 <required>
     private String name;
     
-    //角色  select[管理员,来宾] default['来宾']
+    //角色  select[管理员,操作员,来宾] default[来宾]
     private String role;
     
-    //性别  radio[男,女] default['男']
+    //性别  radio[男,女] default[男]
     private String sex;
     
     //手机 

@@ -93,13 +93,13 @@ public class MemberInfoService {
                 predicates.add(predicate);
             }
             
-            //角色  select[管理员,来宾] default['来宾']
+            //角色  select[管理员,操作员,来宾] default[来宾]
             if (!StringUtils.isEmpty(memberInfoParam.getQuery().getRole())) {
                 Predicate predicate = criteriaBuilder.like(root.get("role").as(String.class), "%" + memberInfoParam.getQuery().getRole() + "%");
                 predicates.add(predicate);
             }
             
-            //性别  radio[男,女] default['男']
+            //性别  radio[男,女] default[男]
             if (!StringUtils.isEmpty(memberInfoParam.getQuery().getSex())) {
                 Predicate predicate = criteriaBuilder.like(root.get("sex").as(String.class), "%" + memberInfoParam.getQuery().getSex() + "%");
                 predicates.add(predicate);

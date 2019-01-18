@@ -20,9 +20,9 @@ public class MemberInfo extends BasePO {
     private String account;
     //名称 <param><required>
     private String name;
-    //角色 <param> select[管理员,来宾] default['来宾']
+    //角色 <param> select[管理员,操作员,来宾] default[来宾]
     private String role;
-    //性别 <param> radio[男,女] default['男']
+    //性别 <param> radio[男,女] default[男]
     private String sex;
     //手机 <param>
     private String phone;
