@@ -1,8 +1,8 @@
 package com.lsz.depot.framework.po;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.lsz.core.utils.ThreadStore;
-import com.lsz.core.utils.UuidMd5;
+import com.lsz.depot.core.utils.ThreadStore;
+import com.lsz.depot.core.utils.UuidMd5;
 
 import javax.persistence.*;
 import java.io.Serializable;

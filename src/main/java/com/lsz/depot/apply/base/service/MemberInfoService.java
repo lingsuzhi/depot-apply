@@ -1,12 +1,12 @@
 package com.lsz.depot.apply.base.service;
 
 import com.lsz.depot.apply.po.MemberInfo;
-import com.lsz.core.common.PageParam;
+import com.lsz.depot.core.common.PageParam;
 import com.lsz.depot.apply.base.param.MemberInfoParam;
-import com.lsz.core.dao.DaoUtil;
-import com.lsz.core.utils.BeanUtil;
+import com.lsz.depot.core.dao.DaoUtil;
+import com.lsz.depot.core.utils.BeanUtil;
 import lombok.extern.slf4j.Slf4j;
-import com.lsz.core.utils.UuidMd5;
+import com.lsz.depot.core.utils.UuidMd5;
 import com.lsz.depot.apply.base.dao.MemberInfoDao;
 import org.springframework.data.domain.Pageable;
 import com.lsz.depot.apply.base.dto.MemberInfoDto;

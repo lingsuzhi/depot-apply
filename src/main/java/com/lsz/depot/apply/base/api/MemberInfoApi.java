@@ -2,15 +2,15 @@ package com.lsz.depot.apply.base.api;
 
 import com.lsz.depot.apply.base.dto.MemberInfoDto;
 import com.lsz.depot.apply.base.param.MemberInfoParam;
-import com.lsz.core.common.PageParam;
+import com.lsz.depot.core.common.PageParam;
 import com.lsz.depot.apply.base.service.MemberInfoService;
-import com.lsz.core.common.ResponseInfo;
+import com.lsz.depot.core.common.ResponseInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by lsz on 2019-01-18
+ * Created by lsz on 2019-01-20
  * 用户信息
  */
 

@@ -17,16 +17,16 @@ public interface MemberInfoDao extends JpaRepository<MemberInfo, Long> {
     MemberInfo findByAccount(String account);
     
     //名称 <required>
-    MemberInfo findByName(String name);
+    List<MemberInfo> findByName(String name);
     
     //角色  select[管理员,操作员,来宾] default[来宾]
-    MemberInfo findByRole(String role);
+    List<MemberInfo> findByRole(String role);
     
     //性别  radio[男,女] default[男]
-    MemberInfo findBySex(String sex);
+    List<MemberInfo> findBySex(String sex);
     
     //手机 
-    MemberInfo findByPhone(String phone);
+    List<MemberInfo> findByPhone(String phone);
     
     Page<MemberInfo> findAll(Specification<MemberInfo> specification, Pageable pageable);
     

@@ -1,7 +1,7 @@
 package com.lsz.depot.apply.config;
 
 
-import com.lsz.core.utils.TokenUtil;
+import com.lsz.depot.core.utils.TokenUtil;
 import com.lsz.depot.framework.annotation.AspectExt;
 import com.lsz.depot.framework.exception.BusinessException;
 import io.jsonwebtoken.Claims;
@@ -38,7 +38,7 @@ public class WebAspect {
 
 
     //    @Around("execution(* com.lsz.depot.apply.*.api.*(..))")
-    @Around("execution (com.lsz.core.common.ResponseInfo com.lsz.depot.apply.api.*Api.*(..))")
+    @Around("execution (com.lsz.depot.core.common.ResponseInfo com.lsz.depot.apply.api.*Api.*(..))")
     public Object invoke(ProceedingJoinPoint point) throws Throwable {
         Signature signature = point.getSignature();
         MethodSignature methodSignature = (MethodSignature) signature;
@@ -67,11 +67,7 @@ public class WebAspect {
                 }
             }
         }
-        if (StringUtils.isEmpty(logLevel)) {
-            if (DEV_ACTIVE.equals(active)) {
-                log.warn("类名:{} ----- 方法名:{} ----- userId:{} ----- 登录时间:{}", aClass.getName(), method.getName(), currentUserId, loginDate);
-            }
-        }
+
         Object[] args = point.getArgs();
         Object proceed = null;
         try {
@@ -81,6 +77,13 @@ public class WebAspect {
 //            final String uid = userId;
 //            final Object result = proceed;
 //            executorService.execute(() -> saveLog(uid, point, args, result));
+
+            if (StringUtils.isEmpty(logLevel)) {
+                if (DEV_ACTIVE.equals(active)) {
+                    log.warn("类名:{} ----- 方法名:{} ----- userId:{} ----- 登录时间:{}", aClass.getName(), method.getName(), currentUserId, loginDate);
+                    log.warn("返回：{}",proceed);
+                }
+            }
         }
     }
 

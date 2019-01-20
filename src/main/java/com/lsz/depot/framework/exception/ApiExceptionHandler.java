@@ -4,7 +4,7 @@ package com.lsz.depot.framework.exception;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
-import com.lsz.core.common.ResponseInfo;
+import com.lsz.depot.core.common.ResponseInfo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

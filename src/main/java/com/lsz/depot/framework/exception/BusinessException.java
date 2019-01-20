@@ -1,7 +1,7 @@
 package com.lsz.depot.framework.exception;
 
 
-import com.lsz.core.common.ResponseInfo;
+import com.lsz.depot.core.common.ResponseInfo;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

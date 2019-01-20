@@ -1,10 +1,10 @@
 package com.lsz.depot.apply.service;
 
 import com.lsz.depot.apply.dao.SuggestionDao;
-import com.lsz.core.dto.SuggestionDTO;
+import com.lsz.depot.core.dto.SuggestionDTO;
 import com.lsz.depot.apply.po.SuggestionInfo;
-import com.lsz.core.utils.BeanUtil;
-import com.lsz.core.utils.UuidMd5;
+import com.lsz.depot.core.utils.BeanUtil;
+import com.lsz.depot.core.utils.UuidMd5;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
 package com.lsz.depot.apply.service;
 
 import com.lsz.depot.apply.dao.UrlMappingDao;
-import com.lsz.core.dto.UrlMappingDTO;
+import com.lsz.depot.core.dto.UrlMappingDTO;
 import com.lsz.depot.apply.po.UrlMapping;
-import com.lsz.core.utils.BeanUtil;
+import com.lsz.depot.core.utils.BeanUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

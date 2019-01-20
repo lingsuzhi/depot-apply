@@ -3,12 +3,12 @@ package com.lsz.depot.apply.api;
 
 import com.lsz.depot.apply.service.AdminService;
 import com.lsz.depot.apply.service.MenuService;
-import com.lsz.core.contract.AdminContract;
-import com.lsz.core.dto.AdminHomeDTO;
-import com.lsz.core.dto.LayuiNavbarBO;
-import com.lsz.core.dto.LoginDTO;
-import com.lsz.core.dto.MiniAdminDTO;
-import com.lsz.core.common.ResponseInfo;
+import com.lsz.depot.core.contract.AdminContract;
+import com.lsz.depot.core.dto.AdminHomeDTO;
+import com.lsz.depot.core.dto.LayuiNavbarBO;
+import com.lsz.depot.core.dto.LoginDTO;
+import com.lsz.depot.core.dto.MiniAdminDTO;
+import com.lsz.depot.core.common.ResponseInfo;
 import com.lsz.depot.framework.annotation.AspectExt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

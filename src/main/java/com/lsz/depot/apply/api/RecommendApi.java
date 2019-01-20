@@ -1,8 +1,8 @@
 package com.lsz.depot.apply.api;
 
-import com.lsz.core.dto.SuggestionDTO;
+import com.lsz.depot.core.dto.SuggestionDTO;
 import com.lsz.depot.apply.service.SuggestionService;
-import com.lsz.core.common.ResponseInfo;
+import com.lsz.depot.core.common.ResponseInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

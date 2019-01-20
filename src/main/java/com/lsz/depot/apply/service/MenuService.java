@@ -1,8 +1,8 @@
 package com.lsz.depot.apply.service;
 
 import com.lsz.depot.apply.dao.MenuDao;
-import com.lsz.core.dto.LayuiNavbarBO;
-import com.lsz.core.enums.MenuTypeEnum;
+import com.lsz.depot.core.dto.LayuiNavbarBO;
+import com.lsz.depot.core.enums.MenuTypeEnum;
 import com.lsz.depot.apply.po.MenuInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
