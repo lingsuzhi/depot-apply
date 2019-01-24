@@ -37,5 +37,7 @@ public class MemberInfoDto {
     
     //备注
     private String remark;
+    //创建时间
+    private LocalDateTime createDate;
 
 }
