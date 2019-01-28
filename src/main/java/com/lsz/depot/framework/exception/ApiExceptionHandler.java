@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 @Slf4j
-@ControllerAdvice
+//@ControllerAdvice
 @ResponseBody
 public class ApiExceptionHandler {
     @ExceptionHandler(value = Exception.class)
