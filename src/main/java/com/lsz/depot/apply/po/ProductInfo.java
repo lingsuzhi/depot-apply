@@ -48,6 +48,22 @@ public class ProductInfo extends BasePO {
     private String remark;
     //颜色 <rowcolor>
     private String color;
+
+    //初始库存
+    private Double initStock;
+
+    //增加数量
+    private Double addCount;
+
+    //减少数量
+    private Double subCount;
+
+    //调整数量
+    private Double transferCount;
+
+    //其他金额
+    private BigDecimal otherProce;
+
     //标记
     private String badge ;
 
