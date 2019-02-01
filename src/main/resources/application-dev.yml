@@ -14,7 +14,7 @@ spring:
     properties:
       hibenate:
         format_sql: true
-    show-sql: true
+    show-sql: false
 #mybatis:
 #  typeAliasesPackage: com.lsz.depot.apply.po
 #  mapperLocations: classpath:mapper/*.xml

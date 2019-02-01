@@ -17,7 +17,9 @@ public interface OrderDao extends JpaRepository<OrderInfo, Long> {
 
     OrderInfo findByUuid(String uuid);
 
-    OrderInfo findByNumber(String number);
+    OrderInfo findFirstByUuidLessThanOrderByUuidDesc(String uuid);
+    OrderInfo findFirstByUuidGreaterThanOrderByUuid(String uuid);
+
 
     void deleteByUuid(String uuid);
 }

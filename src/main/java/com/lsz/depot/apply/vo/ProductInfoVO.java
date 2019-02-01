@@ -27,7 +27,7 @@ public class ProductInfoVO {
     private BigDecimal proce;
 
     //数量
-    private BigDecimal count;
+    private Double count;
 
     //金额
     private BigDecimal total;

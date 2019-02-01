@@ -1,6 +1,8 @@
 package com.lsz.depot.core.utils;
 
 
+import org.springframework.util.DigestUtils;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -41,6 +43,27 @@ public class UuidMd5 {
         long longLeft = bigInteger.longValue();
         long longRight = bigInteger.shiftRight(64).longValue();
         return getUUID22Ex(longLeft, longRight);
+    }
+    public static byte[] md5(String plainText){
+        byte[] secretBytes = null;
+        try {
+            secretBytes = MessageDigest.getInstance("md5").digest(
+                    plainText.getBytes());
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException("没有这个md5算法！");
+        }
+        return secretBytes;
+    }
+    //比较两个字符串md5哈希值 是否相同
+    public static boolean hasStrByMd5(String s1,String s2){
+        byte[] bytes1 = md5(s1);
+        byte[] bytes2 = md5(s2);
+        for(int i = 0 ; i <16;i++){
+            if (bytes1[i] != bytes2[i]){
+                return false;
+            }
+        }
+        return true;
     }
 
     /**

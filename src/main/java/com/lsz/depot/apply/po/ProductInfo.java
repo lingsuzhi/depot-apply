@@ -50,21 +50,21 @@ public class ProductInfo extends BasePO {
     private String color;
 
     //初始库存
-    private Double initStock;
+    private Double initStock = 0.0;
 
     //增加数量
-    private Double addCount;
+    private Double addCount = 0.0;
 
     //减少数量
-    private Double subCount;
+    private Double subCount = 0.0;
 
     //调整数量
-    private Double transferCount;
+    private Double transferCount = 0.0;
 
     //其他金额
     private BigDecimal otherProce;
 
     //标记
-    private String badge ;
+    private String badge;
 
 }

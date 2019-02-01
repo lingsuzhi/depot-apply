@@ -18,9 +18,6 @@ import java.time.LocalDateTime;
 @Entity
 public class OrderInfo extends BasePO {
 
-    //编号 <key><param><required>
-    private String number;
-
     //颜色 <rowcolor>
     private String color;
 

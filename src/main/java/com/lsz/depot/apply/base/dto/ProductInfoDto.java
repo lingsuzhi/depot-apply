@@ -60,18 +60,18 @@ public class ProductInfoDto {
     
     //标记
     private String badge;
-
-    //初始库存
-    private Double initStock;
-
-    //增加数量
-    private Double addCount;
-
-    //减少数量
-    private Double subCount;
-
-    //调整数量
-    private Double transferCount;
+//
+//    //初始库存
+//    private Double initStock;
+//
+//    //增加数量
+//    private Double addCount;
+//
+//    //减少数量
+//    private Double subCount;
+//
+//    //调整数量
+//    private Double transferCount;
 
     //其他金额
     private BigDecimal otherProce;

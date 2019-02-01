@@ -18,11 +18,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class OrderInfoDTO implements Serializable {
 
-    //uuid
+    //编号
     private String uuid;
-
-    //编号 <key><param><required>
-    private String number;
 
     //颜色 <rowcolor>
     private String color;
@@ -50,7 +47,7 @@ public class OrderInfoDTO implements Serializable {
     private Integer discount;
 
     //总数量
-    private BigDecimal countAmount;
+    private Double countAmount;
 
     //总金额
     private BigDecimal countTotal;
